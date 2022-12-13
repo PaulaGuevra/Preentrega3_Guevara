@@ -1,0 +1,55 @@
+body{
+    background-color: #252525;
+}
+
+h1{
+    color: #f7f8f7;
+    position: relative;
+    left: 40%;
+}
+.tablero{
+    width: 800px;
+    height: 500px;
+    background-color: #53c959;
+    border: 2px solid #f5efef; 
+    position: absolute;
+    margin: 10px 100px 10px 100px;
+   
+}
+
+.jugador1{
+    display: block;
+    background-color: #349382;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+.jugador2{
+    display: block;
+    background-color: #349382;
+    position: absolute;
+    margin-top: 15px;
+    left: 348px;
+}
+
+.jugador3{
+    display: block;
+    background-color: #349382;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+.jugador4{
+    display: block;
+    background-color: #349382;
+    position: absolute;
+    left: 383px;
+    top: 475px;
+}
+
+.btn{
+    position: absolute;
+    left: 363px;
+    top: 50%;
+}
