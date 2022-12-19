@@ -19,6 +19,7 @@ class Carta {
     }
 }
 
+/*creo el mazo como objeto*/
 class MazoDeCartas{
     constructor(cartas = crearMazoDeCartas()){
     this.cartas = cartas;
@@ -48,10 +49,13 @@ console.log(mazo.mezclar());
 const baraja = JSON.stringify(mazo);
 
 function iniciarPartida(){
-    hidden = mazo.repartir();
-    let cardImg = document.createElement("img")
+   const btn_div = document.getElementById("btn");
+   btn_div.addEventListener('click', () => mazo.repartir());
+    cartaOculta = mazo.repartir();
+    let cardImg = document.createElement("img");
     let carta = mazo.repartir();
-
+    cardImg.src = "./img/" + carta + ".png";
+    document.getElementById("cartas-j1").append(cardImg);
 }
 
 

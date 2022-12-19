@@ -1,40 +1,38 @@
 body{
     background-color: #252525;
+    overflow-x: hidden;
 }
 
 h1{
     color: #f7f8f7;
     position: relative;
-    left: 40%;
+    left: 45%;
 }
 .tablero{
-    width: 800px;
-    height: 500px;
+    width: 100vw;
+    height: 85vh;
     background-color: #53c959;
-    border: 2px solid #f5efef; 
+    border: 1px solid #f5efef; 
     position: absolute;
-    margin: 10px 100px 10px 100px;
-   
 }
 
 .jugador1{
     display: block;
-    background-color: #349382;
+    background-color: #ffffff;
     position: absolute;
     top: 50%;
     left: 15px;
 }
 .jugador2{
     display: block;
-    background-color: #349382;
+    background-color: #ffffff;
     position: absolute;
-    margin-top: 15px;
-    left: 348px;
+    left: 49.5%;
 }
 
 .jugador3{
     display: block;
-    background-color: #349382;
+    background-color: #ffffff;
     position: absolute;
     top: 50%;
     right: 15px;
@@ -42,14 +40,76 @@ h1{
 
 .jugador4{
     display: block;
-    background-color: #349382;
+    background-color: #ffffff;
     position: absolute;
-    left: 383px;
-    top: 475px;
+    left: 51.5%;
+    bottom: 1px;
+}
+#btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
 }
 
-.btn{
+#cartas-j1 {
     position: absolute;
-    left: 363px;
-    top: 50%;
+    left: 89px;
+    z-index: 1000;
+    top: 45%;
+    border: 2px solid #000000;
+    height: 65px;
+    width: 100px;
+}
+
+#cartas-j2 {
+    position: absolute;
+    left: 49.5%;
+    z-index: 1000;
+    top: 4%;
+    border: 2px solid #000000;
+    height: 100px;
+    width: 65px;
+}
+   
+
+#cartas-j3 {
+    position: absolute;
+    right: 89px;
+    z-index: 1000;
+    top: 45%;
+    border: 2px solid #000000;
+    height: 65px;
+    width: 100px;
+}
+  
+
+#cartas-j4 {
+    position: absolute;
+    left: 49.5%;
+    z-index: 1000;
+    bottom: 4%;
+    border: 2px solid #000000;
+    height: 100px;
+    width: 65px;
+}
+
+#hidden-j1{
+    height: 65px;
+    width: 100px;
+}
+
+#hidden-j2{
+    height: 100px;
+    width: 65px;
+}
+
+#hidden-j3{
+    height: 65px;
+    width: 100px;
+}
+
+#hidden-j4{
+    height: 100px;
+    width: 65px;
 }
